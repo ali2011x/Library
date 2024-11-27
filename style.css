@@ -1,0 +1,50 @@
+.form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: white;
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    border: 1px solid black;
+}
+
+.title, .author, .pages, .read {
+    flex: 1;
+    margin: 10px;
+}
+.titleLabel, .authorLabel, .pagesLabel {
+    margin-right: 5px;
+}
+
+.card-container {
+    
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card {
+    min-width: 300px;
+    padding: 15px;
+    border: 1px solid black;
+    position: relative;
+}
+.delete {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer
+}
+.delete:hover {
+    background-color: gray;
+}
